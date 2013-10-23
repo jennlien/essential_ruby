@@ -29,3 +29,7 @@ pv = gets.chomp.to_f
 # ====================
 # Your code goes here.
 # ====================
+
+loan_quotes.each do |quote|
+	puts "Your monthly payment will be: #{pmt(quote["rate"], nper, pv)} for #{quote["bank"]}."
+end

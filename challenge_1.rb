@@ -17,4 +17,10 @@
 # Your code to define the method goes here.
 # =========================================
 
+def pmt (interest_rate, nper, pv)
+	#monthly_payment = 1.00
+	monthly_payment = (pv*interest_rate*((1+interest_rate)**nper))/(((1+interest_rate)**nper)-1)
+	return monthly_payment
+end
 puts "Your monthly payment will be #{pmt(0.01, 60, 30000)}."
+	
